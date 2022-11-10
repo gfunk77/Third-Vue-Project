@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Third Vue Project</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="#" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
   </head>
   <body>
     <header>
       <h2>Computed Properties and Watchers</h2>
     </header>
     <section id="events">
-      <button>Add 5</button>
-      <button>Add 1</button>
-      <p>Result:</p>
+      <button @click="add(5)">Add 5</button>
+      <button @click="add(1)">Add 1</button>
+      <button @click="reset">Reset</button>
+      <p>Result: {{ almostThere }}</p>
     </section>
   </body>
 </html>
